@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+android {
+    signingConfigs {
+        debug {
+            storeFile file(DEBUG_STORE_FILE)
+            keyAlias DEBUG_KEY_ALIAS
+            storePassword DEBUG_KEY_PASSWORD
+            keyPassword DEBUG_STORE_PASSWORD
+        }
+        release {
+            storeFile file(RELEASE_STORE_FILE)
+            keyAlias RELEASE_KEY_ALIAS
+            storePassword RELEASE_KEY_PASSWORD
+            keyPassword RELEASE_STORE_PASSWORD
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+        ndk { //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        applicationId "com.dcyx.app"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 254
+        versionName "V1.2.7.254"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false" //不显示log
+            zipAlignEnabled true     //Zipalign优化
+//            shrinkResources true    // 移除无用的resource文件
+            minifyEnabled true     //混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            // 输出apk名称为great_v1.0_wandoujia.apk
+            def fileName = "Lerm.apk"
+//great${defaultConfig.versionName}_${variant.productFlavors[0].name}
+            outputFileName = fileName
+        }
+    }
+}
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile 'com.github.smart-fun:XmlToJson:1.4.1'
+    /*xml装换库*/
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':library')
+    compile project(':lockpattern')
+    compile project(':update-app')
+    //    compile project(':base-adapter-library')
+    compile 'com.zhy:base-adapter:3.0.3'
+    //适配器封装
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    //http封装
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    //gson解析
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.github.guitarstar:SwipeLayout:v1.0'
+    //左滑删除
+    compile 'com.yanzhenjie:permission:1.1.0'
+    //权限
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+    /*沉浸式状态栏封装库*/
+    compile 'com.zhy:percent-support-extends:1.1.1'
+    /*百分比适配库*/
+    //    compile 'com.github.codbking:PickTime:v1.0.1'/*时间日期控件*/
+    testCompile 'junit:junit:4.12'
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation files('libs/ksoap2-android-assembly-3.2.0-jar-with-dependencies.jar')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation project(':pick-time')
+    implementation project(':SwipeItem')
+}
