@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name= "appMainColor">#0E85D9</color><!-- 文字  app 主题颜色 蓝色-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_lightgrey_1">#999999</color><!-- 文字  浅灰色 -->
+    <color name="text_lightgrey_2">#666666</color><!-- 文字  深灰色 -->
+    <color name="text_lightgrey_3">#333333</color><!-- 文字  黑灰色 -->
+    <color name="main_home_diver">#C5C5C5</color>
+    <color name="left_menu_background">#383838</color><!-- 侧滑菜单背景色 -->
+    <color name="light_green">#99CC99</color>
+    <color name="chengse">#9ACD32</color>
+    <color name="black_overlay">#66000000</color>#D9D9D9
+    <color name="lightgray">#D3D3D3</color><!--亮灰色 -->
+    <color name="hint_color">#66000000</color>
+    <color name="yellow">#FDDE7F</color>
+    <color name="yellow_dark">#ffcc00</color>
+    <color name="black">#000000</color>
+    <color name="darkorange">#ffff8c00</color>
+    <color name="dkgray">#ff444444</color>
+    <color name="gray">#EEEEEE</color>
+
+    <color name="ligjt_red">#FF0000</color>
+    <color name="yz">#666666</color>
+    <color name="green">#008B00</color>
+    <color name="qgreen">#5cc4cd</color>
+    <color name="ltgray">#ffcccccc</color>
+    <color name="brown">#8B0000</color>
+    <color name="blue">#4444ff</color>
+    <!--     <color name="LightBlue">#5dd4cd</color>框架标题栏颜色 -->
+    <color name="orange">#FB9A24</color>
+    <color name="LightGrey">#DCDCDC</color>
+    <color name="textView_selected">#CFDA8C</color>
+
+    <color name="zise">#8855AA</color>
+    <!-- ===============检查模块所需==================== -->
+    <color name="critically">#FF0000</color>
+    <color name="red">#ff0033</color>
+    <color name="red_pat">#FF8E81</color>
+    <color name="lightGreen">#006633</color>
+    <color name="orderdetail">#006633</color>
+    <color name="checkgreen">#33cc99</color>
+    <color name="checkyellow">#ffa621</color>
+
+    <!--护理任务  -->
+    <color name="nurse_task_yellow">#FFFF00</color>
+    <color name="nurse_task_green">#2BD5D5</color>
+
+    <color name="gridview_pressed">#dddddd</color>
+    <color name="gridview_normal">#ffffff</color>
+
+    <!-- 红色 -->
+    <color name="skyblue">#87CEEB</color>
+    <color name="del">#FC3C39</color>
+
+
+    <!-- 下面为第二版统一颜色 -->
+    <color name="LightBlue">#54c0dd</color><!-- 新框架主题颜色 浅蓝色-->
+    <color name="LightBlue_press">#4BB2CB</color><!-- 新框架主题颜色 深蓝色-->
+    <color name="main_border">#e7e7e7</color><!-- 边框颜色 浅灰色 -->
+
+    <color name="text_lightblue">#20c6cc</color><!-- 文字 浅蓝色 -->
+    <color name="border_deepblue">#1CADB9</color><!-- 病人简卡选中时左侧的深蓝色 -->
+    <color name="white">#ffffffff</color><!-- 白色 -->
+    <color name="grey">#f4f4f4</color><!-- 灰色 -->
+    <color name="font_color_gray">#7C7C7C</color>
+
+    <color name="second_statusbar_background">#f9f9fa</color><!-- 二级标题栏背景色 -->
+    <color name="second_statusbar_background_press">#E5E5E5</color><!-- 二级标题栏背景色 -->
+
+    <color name="transparent">#00000000</color><!-- 透明色 -->
+    <color name="transparent_half">#a0000000</color><!-- 半透明遮罩色 -->
+    <color name="transparent_half2">#89000000</color><!-- 半透明遮罩色 -->
+    <color name="diviver_grey_dialog">#E2E2E2</color><!-- dialog弹窗口线条颜色 -->
+
+    <color name="main_background">#f1f1f3</color>
+    <color name="main_text">#141414</color>
+    <color name="main_border_bottom">#9b9b9b</color>
+    <color name="patlist_press">#fafafa</color>
+    <color name="patlist_name">#2f2f2f</color>
+    <color name="order_right">#ff9900</color>
+    <color name="list_item_diver">#EEEEF3</color><!--#F0F0F0-->
+    <color name="list_diver">#E4E4E4</color>
+    <color name="diver">#A9A9A9</color>
+
+    <!--手势密码-->
+
+    <color name="grey_f6f6f6">#f6f6f6</color>
+    <color name="grey_a5a5a5">#A5A5A5</color>
+    <color name="grey_dde1e7">#DDE1E7</color>
+    <color name="red_f4333c">#F4333C</color>
+    <color name="grey_dde1e7_transparent">#e0DDE1E7</color>
+    <!--引导-->
+    <color name="shadow">#cc222222</color>
+    <color name="shadow_white">#fff</color>
+
+    <!--自动匹配输入框下拉选项的点击颜色-->
+    <color name="item_click">#dddddd</color>
+    <color name="item_nomal">#ffffff</color><!--#ffffff-->
+    <color name="load_dialog_txt_color">#03afff</color><!--#ffffff-->
+
+    <!--欢迎界面图片的颜色-->
+    <color name="welcome_picture_color">#6CC2D9</color>
+
+
+    <!--盘库过期日期显示颜色-->
+    <color name="inventory_will_expire">#ff5c1d</color><!--将过期-->
+    <color name="inventory_stock_low">#ffc35c</color><!--库存低-->
+    <color name="inventory_stock_high">#2daaff</color><!--库存高-->
+    <color name="inventory_out_of_date">#646530</color><!--已过期-->
+
+
+
+</resources>

@@ -1,0 +1,207 @@
+<resources>
+    <!--登录-->
+    <string name="login_note_name">请输入用户名</string>
+    <string name="login_note_pass">请输入密码</string>
+    <string name="reset_server_title">设置服务器地址</string>
+    <string name="login_success">登录成功!</string>
+    <string name="login_failure">用户名或密码错误!</string>
+    <string name="login_server_failure">连接服务器失败!</string>
+    <string name="server_not_found">找不到服务!</string>
+    <string name="login_failure_nodata">请求失败!</string>
+    <string name="user_name">请输入用户名</string>
+    <string name="user_password">请输入密码</string>
+    <string name="login">登      录</string>
+    <string name="reset_url">重置服务器地址</string>
+    <string name="login_request_parse_failure">数据解析错误!</string>
+
+
+    <!--进度条提示语-->
+    <string name="msg_loading">加载中…</string>
+    <string name="msg_searching">查询中…</string>
+    <string name="msg_saving">保存中…</string>
+    <string name="msg_logining">登录中…</string>
+
+
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="testString">测试字段</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_stock_out">StockOutActivity</string>
+
+    <!--模块名称-->
+    <string name="stock_out">出库</string>
+    <string name="stock_in">入库</string>
+    <string name="one_key_repair">一键报修</string>
+    <string name="one_key_purchase">一键购买</string>
+    <string name="fir_tabname_main_home">功能</string>
+    <string name="sec_tabname_main_home">列表</string>
+    <string name="thd_tabname_main_home">个人中心</string>
+    <string name="title_activity_location_text">LocationTextActivity</string>
+    <string name="title_activity_map_ip_search">MapIpSearch</string>
+    <string name="title_activity_stock_in">StockInActivity</string>
+    <string name="title_activity_edit_text">EditTextActivity</string>
+
+    <!--出库-->
+
+    <string name="stock_out_title">出库</string>
+    <string name="stock_out_dept_title">出库组别:</string>
+    <string name="stock_out_dept_hint">出库组别</string>
+    <string name="stock_out_person_title">出库人:</string>
+    <string name="stock_out_person_title_hint">出库人</string>
+    <string name="stockout_click_dialog_title">出库信息</string>
+    <string name="stock_out_btn_name">确认出库</string>
+    <string name="big_small_package_not_zero">大/小包装数量不能都为0!</string>
+    <string name="input_stockout_num">输入出库数量</string>
+    <string name="lack_stock">库存不足，请重新输入！</string>
+    <string name="stock_out_not_zero">出库数量不能为0！</string>
+    <string name="stock_out_no_data_note">没有数据,不能出库！</string>
+    <string name="stock_out_scan_item_title_name">名称</string>
+    <string name="stock_out_scan_item_title_lot">批号</string>
+    <string name="stock_out_scan_item_title_stor">存储位置</string>
+    <string name="stock_out_scan_item_title_num">数量</string>
+    <!---->
+
+    <!--出库计划-->
+
+    <string name="stock_out_plan_title">出库计划</string>
+    <string name="stock_out_plan_dept_title">出库组别:</string>
+    <string name="stock_out_plan_dept_hint">出库组别</string>
+    <string name="stock_out_plan_person_title">出库人:</string>
+    <string name="stock_out_plan_person_title_hint">出库人</string>
+    <string name="stockout_plan_click_dialog_title">出库信息</string>
+    <string name="stock_out_plan_btn_name">新建计划</string>
+    <string name="big_small_plan_package_not_zero">大/小包装数量不能都为0!</string>
+    <string name="input_stockout_plan_num">输入出库数量</string>
+    <string name="lack_stock_plan">库存不足，请重新输入！</string>
+    <string name="stock_out_plan_not_zero">出库数量不能为0！</string>
+    <string name="stock_out_plan_no_data_note">没有数据,不能出库！</string>
+    <string name="stock_out_plan_scan_item_title_name">名称</string>
+    <string name="stock_out_plan_scan_item_title_lot">批号</string>
+    <string name="stock_out_plan_scan_item_title_stor">存储位置</string>
+    <string name="stock_out_plan_scan_item_title_num">数量</string>
+
+
+    <!--入库-->
+    <string name="stock_in_title">入库</string>
+    <string name="stock_in_dept_title">入库组别:</string>
+    <string name="stock_in_dept_hint">入库组别</string>
+    <string name="stock_in_person_title">入库人:</string>
+    <string name="stock_in_person_title_hint">入库人</string>
+    <string name="stockin_click_dialog_title">入库信息</string>
+    <string name="stock_in_btn_name">确认入库</string>
+    <string name="stock_in_no_data_note">没有数据,不能入库！</string>
+    <string name="stock_in_list_title_pi">批号:</string>
+    <string name="stock_in_list_title_date">过期日期:</string>
+    <string name="stock_in_list_title_stor">存储位置:</string>
+    <string name="stock_in_list_title_num">入库数量:</string>
+    <string name="stock_in_list_title_temp">到达温度:</string>
+
+
+    <!--盘库-->
+    <string name="stock_inventory_title">盘库</string>
+    <string name="stock_inventory_dept_title">盘库组别:</string>
+    <string name="stock_inventory_dept_hint">盘库组别</string>
+    <string name="stock_inventory_person_title">盘库人:</string>
+    <string name="stock_inventory_person_title_hint">盘库人</string>
+    <string name="stock_inventory_click_dialog_title">盘库信息</string>
+    <string name="stock_inventory_btn_name">确认盘库</string>
+    <string name="stock_inventory_list_title_stor">存储位置:</string>
+    <string name="stock_inventory_list_title_num">盘库数量:</string>
+    <string name="stock_inventory_list_title_pi">批号:</string>
+    <string name="stock_inventory_list_title_date">过期日期:</string>
+    <string name="stock_inventory_no_data_note">没有数据,不能盘库！</string>
+    <string name="stock_inventory_dialog_title">盘库信息</string>
+    <string name="stock_inventory_dialog_stro_note">没有选择存储位置,该条数据只能展示在列表中不会保存,确定吗?</string>
+
+
+    <!--一键采购-->
+    <string name="one_purchase_title">一键采购</string>
+    <string name="purchase_dialog_title">采购信息</string>
+    <string name="purchase_failure">采购失败！</string>
+    <string name="purchase_success">采购成功！</string>
+    <string name="one_purchase_btn_name">确认采购</string>
+    <string name="one_purchase_no_data_note">没有数据,不能一键采购！</string>
+
+
+    <!--一键报修-->
+    <string name="one_repair_title">一键报修</string>
+    <string name="one_repair_btn_name">确认报修</string>
+    <string name="repair_success">报修成功！</string>
+    <string name="repair_failure">报修失败！</string>
+    <string name="one_repair_no_equipment_note">暂没有可以报修的设备！</string>
+
+
+    <!--关于我们-->
+    <string name="about_us_title">关于我们</string>
+    <string name="about_us_title_wechat">微信公众号</string>
+    <string name="about_us_title_telephone">联系电话</string>
+    <string name="about_us_title_email">电子邮箱</string>
+    <string name="about_us_title_official">官方网站</string>
+    <string name="about_us_title_gesture">手势密码</string>
+    <string name="about_us_title_update">版本检测</string>
+    <string name="app_name_desc">Lerm</string>
+
+    <!--版本更新-->
+    <string name="app_update_start_failure">版本更新启动失败</string>
+    <string name="get_nothing_from_server">未获取服务端配置信息</string>
+
+
+    <!--手势密码-->
+    <string name="gesture_forget_gesture">忘记手势密码</string>
+    <string name="gesture_default">请输入手势密码</string>
+    <string name="gesture_error">密码错误,还可以再输入</string>
+    <string name="gesture_correct">输入正确</string>
+
+    <!--个人中心-->
+    <string name="personal_center_setting_title">设置</string>
+
+    <!--设置-->
+    <string name="setting_lerm_cloud_title">LermCloud</string>
+    <string name="setting_one_key_repch_title">开启一键采购/报修</string>
+    <string name="setting_title">设置</string>
+
+
+    <!-- Create gesture activity -->
+    <string name="create_gesture_activity">CreateGestureActivity</string>
+    <string name="create_gesture_default">绘制解锁图案</string>
+    <string name="create_gesture_correct">再次绘制解锁图案</string>
+    <string name="create_gesture_less_error">至少连接4个点，请重新输入</string>
+    <string name="create_gesture_confirm_error">与上一次绘制不一致，请重新绘制</string>
+    <string name="create_gesture_confirm_correct">设置成功</string>
+    <string name="create_gesture_reset">重新设置</string>
+    <string name="create_gesture_title">设置手势密码</string>
+
+    <!--定位 -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="startlocation">开始定位</string>
+    <string name="stoplocation">停止定位</string>
+
+    <!--功能-->
+    <string name="no_repair_permission">当前用户非客户系统注册用户，不能进行一键报修！</string>
+    <string name="no_purchase_permission">当前用户非客服系统注册用户，不能进行一键采购！</string>
+    <string name="module_developing">该模块正在开发！</string>
+
+    <!--公共部分-->
+    <string name="app_name">LERM</string>
+    <string name="scan_dialog_title">扫描信息</string>
+    <string name="item_already_exists">该项已经存在，不能重复添加！</string>
+    <string name="swipe_menu_del">删除</string>
+    <string name="swipe_menu_update">修改</string>
+    <string name="swipe_menu_receive">接收</string>
+    <string name="save_success">保存成功！</string>
+    <string name="save_failure">保存失败！</string>
+    <string name="network_note">没有网络连接,请检查！</string>
+    <string name="no_result">没有查询到相关信息！</string>
+    <string name="server_no_data">未查询到相关数据!</string>
+    <string name="stock_out_no_data">没有库存,请先入库再出库!</string>
+    <string name="request_failure">查询失败!</string>
+    <string name="dialog_cancle">取消</string>
+    <string name="input_num_tolong_pur_note">输入的数量太大，不能采购</string>
+    <string name="input_num_tolong_in_note">输入的数量太大，不能入库</string>
+    <string name="input_num_not_zero">入库数量不能为0</string>
+    <string name="input_num_tolong_invent_note">输入的数量太大，不能盘库</string>
+    <string name="input_num_tolong_out_note">输入的数量太大，不能出库</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="app_company_description">上海岛昌医学科技股份有限公司</string>
+    <string name="title_activity_stock_out_plan">StockOutPlanActivity</string>
+</resources>

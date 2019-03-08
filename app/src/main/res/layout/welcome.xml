@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:layout_marginTop="-2dp"
+    android:background="@drawable/dcyx"
+   >
+	<ImageView
+		android:layout_width="150dp"
+	    android:contentDescription="@null"
+	    android:layout_height="135dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="155dp"
+	    android:background="@drawable/logo"/>
+	<TextView
+	     android:layout_centerHorizontal="true"
+	     android:layout_marginTop="262dp"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:textSize="32dp"
+	     android:textColor="#54c0dd"
+	     android:visibility="gone"
+	     android:text="急症平台">
+
+	</TextView>
+
+	<TextView
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="dcyx.com"
+	    android:layout_centerHorizontal="true"
+	    android:textColor="#666666" >
+</TextView>
+</RelativeLayout>

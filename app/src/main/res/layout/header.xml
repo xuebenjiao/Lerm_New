@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_home_title_rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/line_height_base"
+    android:background="@color/appMainColor"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+    <!-- 返回图标 -->
+    <LinearLayout
+        android:id="@+id/head_ly_back"
+       android:layout_height="match_parent"
+        android:layout_width="@dimen/_0dp"
+        android:visibility="invisible"
+        android:layout_weight="1"
+        android:gravity="left"
+        >
+        <TextView
+            android:id="@+id/head_tv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/pub_backmain_click_selector"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/head_tv_title"
+        android:layout_width="@dimen/_0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/thd_tabname_main_home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/head_btn_confirm"
+        android:layout_width="@dimen/_0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/select_stock_btn"
+        android:text="@string/stock_in_btn_name"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        />
+</LinearLayout>
+

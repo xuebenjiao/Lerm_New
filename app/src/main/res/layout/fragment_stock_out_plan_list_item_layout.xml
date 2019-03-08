@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/include_header_layout"
+        layout="@layout/header"/>
+    <include
+        android:layout_below="@id/include_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/fragment_stock_out_list_item_common_title"/>
+    <View
+        android:id="@+id/receive_item_deliver"
+        android:layout_width="match_parent"
+        android:layout_below="@id/receive_item_title"
+        android:layout_height="@dimen/height_1"
+        android:background="@color/list_item_diver">
+    </View>
+
+    <com.dcyx.library.RefreshSwipeMenuListView
+        android:id="@+id/listview"
+        android:dividerHeight="1dp"
+        android:divider="@null"
+        android:layout_below="@id/receive_item_deliver"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/note_tv"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/include_header_layout"
+        android:layout_above="@id/stock_in_deptname_ly"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16"
+        android:text="暂没有出库计划!"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

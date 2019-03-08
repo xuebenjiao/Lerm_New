@@ -1,0 +1,1 @@
+include ':app', ':library', ':lockpattern', ':update-app', ':pick-time', ':SwipeItem', ':myJaveTest'

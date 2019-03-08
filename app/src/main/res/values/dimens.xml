@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--padding_top-->
+    <dimen name="padding">10dp</dimen>
+    <dimen name="padding_top_1">1dp</dimen>
+    <dimen name="padding_top_2">2dp</dimen>
+    <dimen name="padding_top_6">6dp</dimen>
+    <dimen name="padding_top_4">4dp</dimen>
+    <dimen name="padding_top_8">8dp</dimen>
+    <dimen name="padding_top_10">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen><!-- 10dip -->
+
+    <!--padding_left-->
+    <dimen name="padding_left_2">2dp</dimen>
+    <dimen name="padding_left_4">4dp</dimen>
+    <dimen name="padding_left_6">6dp</dimen>
+    <dimen name="padding_left_8">8dp</dimen>
+    <dimen name="padding_left_10">10dp</dimen>
+
+    <!--padding_right-->
+    <dimen name="padding_right_2">2dp</dimen>
+    <dimen name="padding_right_4">4dp</dimen>
+    <dimen name="padding_right_6">6dp</dimen>
+    <dimen name="padding_right_8">8dp</dimen>
+    <dimen name="padding_right_10">10dp</dimen>
+
+    <!--padding_bottom-->
+    <dimen name="padding_bottom_2">2dp</dimen>
+    <dimen name="padding_bottom_4">4dp</dimen>
+    <dimen name="padding_bottom_6">6dp</dimen>
+    <dimen name="padding_bottom_8">8dp</dimen>
+    <dimen name="padding_bottom_10">10dp</dimen>
+
+    <!--height-->
+    <dimen name="height_1">1dp</dimen>
+    <dimen name="height_2">2dp</dimen>
+    <dimen name="height_4">4dp</dimen>
+    <dimen name="height_8">8dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="pading_top_buttom">10dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size_small">16dp</dimen>
+
+    <dimen name="font_14sp">14sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="status_bars">25dp</dimen>
+    <!-- sliding menu -->
+    <dimen name="slidingmenu_aboveoffset">80dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">1dp</dimen>
+    <integer name="num_cols">1</integer>
+
+
+    <!-- 第二版统一边框圆角大小 -->
+    <dimen name="border_radius_4">4px</dimen><!-- 4px圆角 -->
+    <dimen name="border_radius_6">6px</dimen><!-- 6px圆角 -->
+    <dimen name="border_radius_8">8px</dimen><!-- 8px圆角 -->
+    <dimen name="border_radius_10">10px</dimen><!-- 10px圆角 -->
+    <!-- 3个标准字体大小 -->
+    <dimen name="text_size_12">12sp</dimen><!-- 12sp -->
+    <dimen name="text_size_14">14sp</dimen><!-- 14sp -->
+    <dimen name="text_size_16">16sp</dimen><!-- 16sp -->
+    <dimen name="text_size_18">18sp</dimen><!-- 18sp 弹出框标题统一大小-->
+    <!-- 默认最低行高 -->
+    <dimen name="line_height_base">48dp</dimen><!-- 48dip -->
+    <!-- 默认标题栏高度36dp -->
+    <dimen name="line_header_null_base">10dp</dimen><!-- 36dip -->
+    <dimen name="line_header_base">36dp</dimen><!-- 36dip -->
+    <dimen name="padding_left">14dp</dimen><!-- 12dip -->
+    <dimen name="padding_right">14dp</dimen><!-- 12dip -->
+    <!-- 显示的一行内容高度 -->
+    <dimen name="content_height_base">14dp</dimen><!-- 14dip -->
+    <!-- dialog或者弹出popuwindow距离顶部高度 -->
+    <dimen name="dialogorpop_padding_top">15dp</dimen><!-- 14dip -->
+    <!-- dialog或者弹出popuwindow没有底部按钮时距离底部高度 -->
+    <dimen name="dialogorpop_padding_bottom">10dp</dimen><!-- 10dip -->
+    <!-- dialog或者弹出popuwindow底部按钮高度 -->
+    <dimen name="dialogorpop_bottom_button_height">56dp</dimen><!-- 56dip -->
+
+
+    <!--手势密码-->
+    <dimen name="_0dp">0dp</dimen>
+    <dimen name="_0.5dp">0.5dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_6dp">6dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+    <dimen name="_270dp">270dp</dimen>
+
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

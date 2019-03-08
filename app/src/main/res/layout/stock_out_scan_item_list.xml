@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/receive_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_14sp"
+            android:textColor="@color/font_color_gray"
+            android:text="@string/stock_out_scan_item_title_name"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_14sp"
+            android:textColor="@color/font_color_gray"
+            android:text="@string/stock_out_scan_item_title_lot"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_14sp"
+            android:textColor="@color/font_color_gray"
+            android:text="@string/stock_out_scan_item_title_stor"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="@dimen/font_14sp"
+            android:layout_gravity="center"
+            android:textColor="@color/font_color_gray"
+            android:text="@string/stock_out_scan_item_title_num"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/receive_item_deliver"
+        android:layout_width="match_parent"
+        android:layout_below="@id/receive_item_title"
+        android:layout_height="@dimen/height_1"
+        android:background="@color/list_item_diver">
+    </View>
+
+    <com.dcyx.library.RefreshSwipeMenuListView
+        android:id="@+id/stock_out_scan_listview"
+        android:dividerHeight="1dp"
+        android:divider="@null"
+        android:layout_below="@id/receive_item_deliver"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

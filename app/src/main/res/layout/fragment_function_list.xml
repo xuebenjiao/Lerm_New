@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <include
+        android:id="@+id/include_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_base"
+        layout="@layout/header"/>
+    <TextView
+        android:id="@+id/note_tv"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/include_header_layout"
+        android:layout_above="@id/stock_in_deptname_ly"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:enabled="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16"
+        android:text="暂未开发……"
+        android:textColor="@color/black"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

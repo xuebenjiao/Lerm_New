@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/include_header_layout"
+        layout="@layout/header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/list_item_diver"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/activity_setting_lerm_cloud"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/padding_top_1"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:paddingLeft="@dimen/padding_left_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="left|center"
+                    android:text="@string/setting_lerm_cloud_title"
+                    android:textColor="@color/text_lightgrey_3"
+                    android:textSize="@dimen/text_size_16"/>
+                <com.dcyx.app.mvp.ui.widget.SwitchView
+                    android:id="@+id/activity_setting_switch_view_lerm_cloud"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_2dp"
+                    android:layout_height="match_parent"
+                    >
+                </com.dcyx.app.mvp.ui.widget.SwitchView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/activity_setting_one_key"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/padding_top_1"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:paddingLeft="@dimen/padding_left_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="left|center"
+                    android:text="@string/setting_one_key_repch_title"
+                    android:textColor="@color/text_lightgrey_3"
+                    android:textSize="@dimen/text_size_16"/>
+                <com.dcyx.app.mvp.ui.widget.SwitchView
+                    android:id="@+id/activity_setting_switch_view_one_key"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_2dp"
+                    android:layout_height="match_parent"
+                    >
+                </com.dcyx.app.mvp.ui.widget.SwitchView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

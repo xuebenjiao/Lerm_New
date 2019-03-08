@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 个人菜单标题数组 -->
+    <string-array name="main_menu_name">
+        <item>入库</item>
+        <item>出库</item>
+     <!--   <item>出库计划</item>-->
+        <item>盘库</item>
+        <item>一键报修</item>
+        <item>一键采购</item>
+    </string-array>
+
+    <!-- 个人菜单图片名称数组 -->
+    <string-array name="main_menu_icon">
+        <item>stockin</item>
+        <item>stockout</item>
+      <!--  <item>stockout</item>-->
+        <item>inventory</item>
+        <item>onekeyrepair</item>
+        <item>onekeypur</item>
+
+    </string-array>
+    <!-- 个人菜单跳转类名数组 -->
+    <string-array name="main_menu_class">
+        <item>StockInActivity</item>
+        <item>StockOutActivity</item>
+<!--        <item>StockOutPlanActivity</item>-->
+        <item>StockInventoryActivity</item>
+        <item>OneKeyRepairActivity</item>
+        <item>OneKeyPurchaseActivity</item>
+    </string-array>
+</resources>

@@ -1,0 +1,156 @@
+<!--<RelativeLayout -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.zhy.android.percent.support.PercentRelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="-2dp"
+		android:background="@drawable/dcyx"
+		android:id="@+id/userlogin_main_ll">
+
+		<ImageView
+			android:id="@+id/logo_iv1"
+			android:layout_width="120dp"
+			android:layout_height="100dp"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="15dp"
+			android:visibility="gone"
+			android:scaleType="centerInside"
+			android:contentDescription="@null"
+			android:src="@drawable/logo"
+			/>
+		<ImageView
+			android:id="@+id/logo_iv"
+			android:layout_width="@dimen/_0dp"
+			android:layout_height="@dimen/_0dp"
+			android:layout_centerHorizontal="true"
+			android:scaleType="centerInside"
+			android:contentDescription="@null"
+			app:layout_marginTopPercent ="5%h"
+			app:layout_heightPercent="25%h"
+			app:layout_widthPercent="30%w"
+			android:src="@drawable/logo"
+			/>
+		<LinearLayout
+			android:id="@+id/userName_et_ll"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/logo_iv"
+			android:orientation="horizontal"
+			android:layout_marginTop="@dimen/_10dp"
+			android:layout_marginBottom="@dimen/_6dp"
+			android:layout_marginRight="@dimen/_20dp"
+			android:layout_marginLeft="@dimen/_20dp"
+			>
+			<ImageView
+				android:layout_width="29dp"
+				android:layout_height="29dp"
+				android:layout_gravity="center"
+				android:contentDescription="@null"
+				android:src="@drawable/user1"
+				android:layout_marginLeft="7dp"
+				android:layout_marginRight="1dp"/>
+			<com.dcyx.app.mvp.ui.widget.MyTextInputLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				>
+				<com.dcyx.app.mvp.ui.widget.AutoCompleteEditText
+					android:id="@+id/userName_et"
+					style="@style/AutoCompleteStyle"
+					android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:hint="@string/user_name"
+					android:inputType="text"
+					android:singleLine="true"
+					android:textColor="#ffffff"
+					android:textSize="16sp"
+					android:textColorHint="#ffffff"
+					android:completionThreshold="1"
+					android:paddingLeft="5dp"
+					android:background="@null"/>
+			</com.dcyx.app.mvp.ui.widget.MyTextInputLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/password_et_ll"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/userName_et_ll"
+			android:layout_marginLeft="21dp"
+			android:layout_marginRight="21dp"
+			android:orientation="horizontal" >
+			<ImageView
+				android:layout_width="29dp"
+				android:layout_height="29dp"
+				android:layout_gravity="center"
+				android:contentDescription="@null"
+				android:src="@drawable/passwd1"
+				android:layout_marginLeft="7dp"
+				android:layout_marginRight="1dp"/>
+			<com.dcyx.app.mvp.ui.widget.MyTextInputLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				app:passwordToggleEnabled="true"
+				>
+				<com.dcyx.app.mvp.ui.widget.LineEditText
+					android:id="@+id/password_et"
+					android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:hint="@string/user_password"
+					android:inputType="textPassword"
+					android:singleLine="true"
+					android:textColor="#ffffff"
+					android:background="@null"
+					android:textSize="16sp"
+					android:paddingLeft="5dp"
+					android:textColorHint="#ffffff" />
+			</com.dcyx.app.mvp.ui.widget.MyTextInputLayout>
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/login_btn"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:layout_below="@id/password_et_ll"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/selector_userlogin_btn"
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="21dp"
+			android:layout_marginRight="15dp"
+			android:padding="10dp"
+			android:text="@string/login"
+			android:textColor="#666666"
+			android:textSize="16sp" />
+		<RelativeLayout
+			android:id="@+id/ll_login_buttom"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true">
+			<TextView
+				android:id="@+id/login_buttom"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:textColor="#666666" />
+		</RelativeLayout>
+
+
+		<TextView
+			android:id="@+id/reset_serverurl"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@id/ll_login_buttom"
+			android:layout_centerHorizontal="true"
+			app:layout_marginBottomPercent="5%h"
+			android:clickable="true"
+			android:text="@string/reset_url"
+			android:textColor="#666666"
+			android:textSize="16sp" />
+
+	</com.zhy.android.percent.support.PercentRelativeLayout>
+</LinearLayout>
+

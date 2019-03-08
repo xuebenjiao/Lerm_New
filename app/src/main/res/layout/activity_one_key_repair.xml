@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <include
+        android:id="@+id/include_header_layout"
+        layout="@layout/header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/stock_out_list_comp_name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_left_10"
+                    android:text="设备基本信息"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_18"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_8"
+                android:background="@color/list_item_diver">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/padding_bottom_8"
+                android:layout_marginTop="@dimen/padding_top_8"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left_10">
+
+                <TextView
+                    android:id="@+id/activity_one_repair_tv_bianhao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="设备编号"
+                    android:textColor="@color/text_lightgrey_3"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <com.dcyx.app.mvp.ui.widget.ComboBox
+                    android:id="@+id/activity_one_repair_cob_bianhao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:hint="请选择编号"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/text_lightgrey_3"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="@dimen/text_size_16"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="@color/list_item_diver">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/padding_bottom_8"
+                android:layout_marginTop="@dimen/padding_top_8"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left_10">
+
+                <TextView
+                    android:id="@+id/activity_one_repair_tv_mingcheng"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="设备名称"
+                    android:textColor="@color/text_lightgrey_3"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <com.dcyx.app.mvp.ui.widget.ComboBox
+                    android:id="@+id/activity_one_repair_cob_mingcheng"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:hint="名称"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/text_lightgrey_3"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="@dimen/text_size_16"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="@color/list_item_diver">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/padding_bottom_8"
+                android:layout_marginTop="@dimen/padding_top_8"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left_10">
+
+                <TextView
+                    android:id="@+id/activity_one_repair_tv_xinghao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text="设备型号"
+                    android:textColor="@color/text_lightgrey_3"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <com.dcyx.app.mvp.ui.widget.ComboBox
+                    android:id="@+id/activity_one_repair_cob_xinghao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:hint="型号"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/text_lightgrey_3"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="@dimen/text_size_16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/list_item_diver"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_left_10"
+                android:text="工单主题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18">
+            </TextView>
+
+            <com.dcyx.app.mvp.ui.widget.ComboBox
+                android:id="@+id/activity_one_repair_et_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="主题"
+                android:imeOptions="actionNext"
+                android:maxLines="4"
+                android:minLines="2"
+                android:paddingLeft="@dimen/padding_left_10"
+                android:textColor="@color/text_lightgrey_3"
+                android:textColorHint="@color/lightgray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/list_item_diver"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_left_10"
+                android:text="工单内容"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18">
+            </TextView>
+
+            <com.dcyx.app.mvp.ui.widget.ComboBox
+                android:id="@+id/activity_one_repair_et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:enabled="true"
+                android:gravity="top"
+                android:hint="内容"
+                android:maxLines="8"
+                android:minLines="6"
+                android:paddingLeft="@dimen/padding_left_10"
+                android:scrollbars="vertical"
+                android:textColorHint="@color/lightgray"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

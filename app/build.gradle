@@ -27,14 +27,19 @@ android {
         useNewCruncher = false
     }
     defaultConfig {
+        //配置so库架构（真机：arm,模拟器：x86)
         ndk { //选择要添加的对应cpu类型的.so库。
-            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            //, 'x86', 'x86_64', 'mips', 'mips64'
+            //如果项目中包含第三方SDK或者自己使用了ndk,如果不进行配置会打包全cpu架构的动态库进入apk
+            //对于真机，只需要保留一个armeabi(armeabi-v7a)就可以了。所以可修改配置
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a'
+
         }
         applicationId "com.dcyx.app"
-        minSdkVersion 16
+        minSdkVersion 18
         targetSdkVersion 26
-        versionCode 254
-        versionName "V1.2.7.254"
+        versionCode 258
+        versionName "V1.2.10.258"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -68,16 +73,14 @@ android {
 allprojects {
     repositories {
         maven { url "https://jitpack.io" }
+        google()
     }
 }
-
 dependencies {
     compile 'com.github.smart-fun:XmlToJson:1.4.1'
     /*xml装换库*/
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':library')
-    compile project(':lockpattern')
-    compile project(':update-app')
+
     //    compile project(':base-adapter-library')
     compile 'com.zhy:base-adapter:3.0.3'
     //适配器封装
@@ -106,4 +109,25 @@ dependencies {
     })
     implementation project(':pick-time')
     implementation project(':SwipeItem')
+    if(rootProject.ext.isModule) {
+        compile project(':library')
+    }
+
+    compile project(':lockpattern')
+    compile project(':update-app')
+
+    /*EventBus 替换Handler完成组件间或线程间的通信*/
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+//    implementation 'com.github.moduth:blockcanary-android:1.5.0'
+    // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
+    debugCompile 'com.github.markzhai:blockcanary-android:1.5.0'
+     //仅在Release包启用BlockCanary进行开盾监控和提示的话
+//    releaseCompile 'com.github.markzhai:blockcanary-android:1.5.0'
+
+   //LeakCanary检测内存泄漏
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
+//    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
+    // Optional, if you use support library fragments:
+    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.1'
 }

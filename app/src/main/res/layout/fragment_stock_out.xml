@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/include_header_layout"
+        layout="@layout/header"/>
+    <include
+        android:id="@+id/fragment_stock_out_bottom"
+        layout="@layout/stock_in_and_out_bottom_common"/>
+<!--    <ScrollView
+        android:id="@+id/frgment_stock_plan_scrollview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/include_header_layout"
+        android:layout_above="@id/fragment_stock_out_bottom"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+            <com.dcyx.library.RefreshSwipeMenuListView
+                android:id="@+id/listview"
+                android:dividerHeight="1dp"
+                android:divider="@null"
+                android:layout_below="@id/include_header_layout"
+                android:layout_above="@id/fragment_stock_out_bottom"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <!--</LinearLayout>-->
+        <!--    <include
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/include_header_layout"
+                android:layout_above="@id/fragment_stock_out_bottom"
+                layout="@layout/frag_stock_out_center"
+             >
+            </include>-->
+    <!--</ScrollView>-->
+</RelativeLayout>
+

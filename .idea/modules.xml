@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lerm_New.iml" filepath="$PROJECT_DIR$/Lerm_New.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeItem/SwipeItem.iml" filepath="$PROJECT_DIR$/SwipeItem/SwipeItem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lockpattern/lockpattern.iml" filepath="$PROJECT_DIR$/lockpattern/lockpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myJaveTest/myJaveTest.iml" filepath="$PROJECT_DIR$/myJaveTest/myJaveTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pick-time/pick-time.iml" filepath="$PROJECT_DIR$/pick-time/pick-time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/update-app/update-app.iml" filepath="$PROJECT_DIR$/update-app/update-app.iml" />
+    </modules>
+  </component>
+</project>
